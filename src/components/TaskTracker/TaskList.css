@@ -1,0 +1,10 @@
+.task-list {
+    margin: 20px 0;
+  }
+  .event-tasks {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  

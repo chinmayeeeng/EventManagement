@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #bdd8f1, #e3e3e4);
+    color: #333;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #444;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Card Styles for Forms and Lists */
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  .event-form, .task-form {
+    padding: 20px;
+  }
+  
+  .event-list, .task-list {
+    padding: 20px;
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  form input:focus, form select:focus, form button:focus {
+    border-color: #ff9a9e;
+    outline: none;
+  }
+  
+  form button {
+    background: linear-gradient(90deg, #2850cb, #9fbbf1);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  form button:hover {
+    background: linear-gradient(90deg, #a2c4f1, #a2c4f1);
+  }
+  
+  /* List Styles */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  li strong {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Button Styles */
+  button {
+    background: linear-gradient(90deg, #2850cb, #9fbbf1);;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #5a54e0;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .card {
+      padding: 15px;
+    }
+  
+    form button, form input, form select {
+      font-size: 12px;
+    }
+  
+    li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    li button {
+      margin: 5px 0 0;
+    }
+  }
+  

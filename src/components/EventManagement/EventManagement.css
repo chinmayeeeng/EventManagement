@@ -1,0 +1,137 @@
+/* General Layout */
+.event-management {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .event-management h1 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  /* Event Form */
+  .event-form {
+    width: 100%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event-form h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #34495e;
+  }
+  
+  .event-form form div {
+    margin-bottom: 15px;
+  }
+  
+  .event-form form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2c3e50;
+  }
+  
+  .event-form form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  .event-form form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .event-form form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Event List */
+  .event-list {
+    width: 100%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event-list h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #34495e;
+  }
+  
+  .event-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .event-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .event-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .event-list li strong {
+    font-size: 16px;
+    color: #2c3e50;
+  }
+  
+  .event-list li button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .event-list li button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Button for Edit */
+  .event-list li button:first-of-type {
+    background-color: #2ecc71;
+  }
+  
+  .event-list li button:first-of-type:hover {
+    background-color: #27ae60;
+  }
+  
+  /* Empty List */
+  .event-list p {
+    font-size: 16px;
+    color: #7f8c8d;
+    text-align: center;
+    margin: 20px 0;
+  }
+  

@@ -1,0 +1,72 @@
+.attendee-management-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  h2, h3 {
+    color: #333;
+  }
+  
+  .add-attendee {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .add-attendee input {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-attendee button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-attendee button:hover {
+    background-color: #0056b3;
+  }
+  
+  .attendees-list ul,
+  .event-assignments ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .attendees-list li,
+  .event-assignments li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .attendees-list button {
+    padding: 4px 8px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .attendees-list button:hover {
+    background-color: #a71d2a;
+  }
+  
+  .attendees-list select {
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
