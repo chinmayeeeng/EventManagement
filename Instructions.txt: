@@ -1,0 +1,104 @@
+Event Management Project - Setup Instructions:
+
+This repository contains the source code for the Event Management project built using Node.js (backend), React.js (frontend), and MongoDB (database).
+
+Follow the steps below to set up and run the project locally.
+
+Prerequisites
+Ensure you have the following installed on your system:
+1.Node.js: Download Node.js
+2.MongoDB: Download MongoDB and ensure the database is running locally or provide a remote URI.
+3.Git: Download Git
+4.VS Code: (Optional) Recommended for editing and running the code.
+
+Steps to Set Up the Project
+1. Clone the Repository
+->Copy code
+git clone https://github.com/<your-github-username>/<repository-name>.git
+cd <repository-name>
+
+2. Install Backend Dependencies
+Navigate to the backend directory (root of the project):
+->Copy code
+cd backend
+Install required Node.js packages:
+->Copy code
+npm install
+The package.json file ensures all necessary dependencies like express, mongoose, cors, bcryptjs, and jsonwebtoken are installed.(Make sure u install the 18 version , because the latest version does not support few packages)
+
+3. Configure Backend
+Create a .backend file in the root of the backend directory and configure the following environment variables:
+
+backend
+Copy code
+PORT=5000
+MONGO_URI=mongodb://localhost:27017/events
+JWT_SECRET=your_secret_key
+Ensure the MONGO_URI matches your MongoDB connection string.
+
+4. Start the Backend Server
+Run the following command in the backend directory:
+->Copy code
+npm start
+The server should start on http://localhost:5000.
+
+5. Install Frontend Dependencies
+Navigate to the frontend directory (root of the project):
+->Copy code
+cd frontend
+Install required React dependencies:
+->Copy code
+npm install
+This ensures all necessary React dependencies like react-router-dom, axios, react-big-calendar, and others are installed.
+
+6. Configure Frontend
+The frontend configuration is already set up to make API calls to http://localhost:5000. Ensure your backend server is running for the API calls to work correctly.
+
+7. Start the React App
+Run the following command in the frontend directory:
+->Copy code
+npm start
+The React app should open in your browser at http://localhost:3000.
+
+Project Structure:
+
+1.Backend (/backend)
+server.js: Contains all API routes and backend logic.
+models/: Contains Mongoose schemas for events, attendees, tasks, and users.
+routes/: Contains route handlers for different modules.
+
+2.Frontend (/frontend)
+src/
+components/: Contains individual modules:
+EventManagement/: Event management components and styles.
+AttendeeManagement/: Attendee management components and styles.
+TaskTracker/: Task tracker components and styles.
+Sidebar/: Sidebar navigation components and styles.
+LoginSignup/: Login and signup components and styles.
+CalendarView/: Calendar view components and styles.
+App.js: Main file for defining routes and layout.
+index.js: Entry point for the React app.
+
+Testing the App
+Open your browser and navigate to http://localhost:3000.
+
+On launch, you will see the Login/Signup screen. Sign up with a new account or log in with existing credentials.
+
+Once logged in, the dashboard with the following features will appear:
+Event Management
+Attendee Management
+Task Tracker
+Calendar View
+Troubleshooting
+
+Common Issues:
+1.MongoDB Connection Error: Ensure MongoDB is installed and running on localhost:27017. If using a remote database, update the MONGO_URI in your .env file.
+2.Port Conflict: Ensure ports 5000 (backend) and 3000 (frontend) are not in use by other processes.
+3.Environment Variables: Verify the .env file is correctly set up in the backend directory.
+
+Additional Notes
+If deploying the project, ensure MONGO_URI points to a production database, and JWT_SECRET is a strong, secure key.
+To run the backend and frontend concurrently, use tools like concurrently or run each in separate terminal windows.
+Feel free to raise issues or contribute to the project by submitting a pull request.
+
+This should ensure a smooth setup and execution of your project for others using the GitHub repository. Let me know if you need further customization!
